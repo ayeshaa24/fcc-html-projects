@@ -1,0 +1,40 @@
+#body {
+  background-color: lavender;
+  color: "#2B2D2F";
+  font-family: Consolas;
+}
+#main {
+  width: 60%;
+  margin: auto;
+}
+#title {
+  text-align: center;
+  padding-top: 10px;
+}
+#title span {
+  background-color: black;
+  color:white;
+  padding: 0px 0px 0px 10px;
+/*   border-radius: 5px 5px 5px 5px; */
+}
+#img-div, #tribute-info {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+}
+#image {
+  padding: 20px 20px 20px 20px;
+  margin: auto;
+  max-width: 50%;
+  display: block;
+}
+#img-caption {
+  padding: 0px 10px 10px 10px;
+  text-align: center;
+}
+#timeline-heading, #link {
+  text-align: center;
+}
+#tribute-info {
+  padding: 10px 10px 10px 10px;
+}

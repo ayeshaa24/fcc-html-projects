@@ -1,0 +1,77 @@
+body {
+  font-family: sans-serif;
+}
+
+.main-header, #navbar-header {
+  font-size: 30px;
+  margin: 20px 0px;
+}
+
+#navbar-header {
+  text-align: center;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: solid;
+  height: 100%;
+  width: 300px;
+}
+
+#navbar ul {
+  overflow-y: auto;
+  height: 88%;
+/* enables scrollbar */
+  padding: 0;
+/* moves navbar list to the left */
+}
+
+#navbar li {
+  list-style: none;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+}
+
+#introduction .main-header {
+  margin-top: 50px;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 320px;
+}
+
+code {
+  display: block;
+  white-space: pre-line;
+ /*  Sequences of whitespace will collapse into a single whitespace. Text will wrap when necessary, and on line breaks  */
+ background-color: #eee;
+ padding: 10px;
+ margin: 10px;
+/* padding: space inside, margin: space outside  */
+ border-radius: 5px;
+ line-height: 2;
+}
+
+@media (max-width: 500px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+  }
+
+  #main-doc {
+    position: relative;
+    margin: 10px;
+  }
+  code {
+    overflow-x: auto;
+  }
+}
