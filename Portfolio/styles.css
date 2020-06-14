@@ -1,0 +1,127 @@
+:root {
+  --pri-bg-color: #222222;
+  --pri-font-color: white;
+  --sec-bg-color: lavender;
+  --sec-font-color: black;
+  --minor-font: "Roboto", Consolas, sans-serif;
+  --major-font: "Raleway", sans-serif;
+}
+
+#main {
+  color: var(--pri-font-color);
+  margin: 0;
+}
+
+#main a {
+  text-decoration: none;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 75px;
+  width: 100%;
+  background-color: var(--sec-bg-color);
+  font-family: var(--minor-font);
+  border-bottom: 1px solid var(--pri-bg-color);
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40vw;
+}
+
+#navbar li {
+  list-style: none
+}
+
+#navbar a {
+  color: var(--sec-font-color);
+}
+
+#main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#main h1 {
+  font-family: var(--major-font);
+  font-size: 50px;
+}
+
+#welcome-section {
+  background-color: var(--pri-bg-color);
+  line-height: 0;
+}
+
+
+#welcome-section p {
+  font-family: var(--minor-font);
+  font-style: italic;
+  font-size: 30px;
+}
+
+#projects {
+  background-color: var(--sec-bg-color);
+}
+
+#project-grid {
+  display: grid;
+}
+
+#contact {
+  background-color: var(--pri-bg-color);
+}
+
+#contact-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  font-family: var(--minor-font);
+  font-size: 30px;
+  color: white;
+}
+
+#contact-list a {
+  margin: 0px 10px 0px 20px;
+  color: var(--pri-font-color);
+}
+
+#footer {
+  height: 75px;
+  border-top: 1px solid var(--sec-bg-color);
+  background-color: var(--pri-bg-color);
+  color: var(--pri-font-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: var(--minor-font);
+  font-size: 10px;
+}
+
+@media (max-width: 1000px) {
+  #navbar ul {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 800px) {
+  #navbar ul {
+    width: 100vw;
+  }
+}
